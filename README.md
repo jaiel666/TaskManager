@@ -13,9 +13,9 @@ Task Manager is a simple PHP web application for managing tasks where user can v
 ![Delete Feature](images/delete.png)
 
 ## Requirements
-* Git
-* MySql
-* PHP^7.4
+* [Git](https://git-scm.com/download/win)
+* [MySql](https://www.mysql.com/downloads/)
+* [PHP^7.4](https://www.php.net/downloads.php)
 
 ## Installation Guide
 ### Setting up
