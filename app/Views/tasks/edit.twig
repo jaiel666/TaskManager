@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Task</title>
+    <link rel="stylesheet" type="text/css" href="/css/edit.css">
+</head>
+<body>
+<div class="edit-task-form">
+    <h1>Edit Task</h1>
+    <form action="/tasks/{{ task.id }}/update" method="post">
+        <label for="task_name">Task Name:</label>
+        <input type="text" id="task_name" name="task_name" value="{{ task.taskName }}" required>
+        <br>
+        <label for="task_description">Task Description:</label>
+        <textarea id="task_description" name="task_description" required>{{ task.taskDescription }}</textarea>
+        <br>
+        <button type="submit">Update Task</button>
+    </form>
+    <a href="/tasks/{{ task.id }}">Back to Task</a>
+</div>
+</body>
+</html>

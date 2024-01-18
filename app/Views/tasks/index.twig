@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <link rel="stylesheet" type="text/css" href="/css/index.css">
+</head>
+<body>
+<div class="task-container">
+    <h1>Task Manager</h1>
+
+    {% if tasks is empty %}
+        <p>No tasks added</p>
+    {% else %}
+        <table>
+            <thead>
+            <tr>
+                <th>ID</th>
+                <th>Task Name</th>
+                <th>Task Description</th>
+                <th>Created At</th>
+                <th>Actions</th>
+            </tr>
+            </thead>
+            <tbody>
+            {% for task in tasks %}
+                <tr>
+                    <td>{{ task.id }}</td>
+                    <td>{{ task.taskName }}</td>
+                    <td>{{ task.taskDescription }}</td>
+                    <td>{{ task.createdAt }}</td>
+                    <td>
+                        <a href="/tasks/{{ task.id }}">
+                            <button class="view-button">View</button>
+                        </a>
+                        <form action="/tasks/{{ task.id }}/delete" method="post" onsubmit="return confirm('Are you sure you want to delete this task?');">
+                            <button class="delete-button" type="submit">Delete Task</button>
+                        </form>
+                    </td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    {% endif %}
+    <a href="/tasks/create">
+        <button>Add Task</button>
+    </a>
+</div>
+</body>
+</html>

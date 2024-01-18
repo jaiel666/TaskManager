@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Task</title>
+    <link rel="stylesheet" type="text/css" href="/css/create.css">
+</head>
+<body>
+<div class="create-task-form">
+    <h1>Create Task</h1>
+    <form action="/tasks" method="post">
+        <label for="task_name">Task Name:</label>
+        <input type="text" id="task_name" name="task_name" required>
+        <br>
+        <label for="task_description">Task Description:</label>
+        <textarea id="task_description" name="task_description" required></textarea>
+        <br>
+        <button type="submit">Create Task</button>
+    </form>
+    <a href="/tasks">Back to Tasks</a>
+</div>
+</body>
+</html>
