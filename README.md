@@ -14,8 +14,8 @@ Task Manager is a simple PHP web application for managing tasks where user can v
 
 ## Requirements
 * Git
-* MySql (or any compatible database for data storage)
-* PHP
+* MySql
+* PHP^7.4
 
 ## Installation Guide
 ### Setting up
@@ -33,3 +33,7 @@ Task Manager is a simple PHP web application for managing tasks where user can v
 4. Start the PHP built-in server
    `php -S localhost:8000`
 5. Acces the project opening your web browser and go to `http://localhost:8000`
+
+## Database Structure
+This command exports the structure of a database without including any data - 
+`mysqldump -u user -h localhost -p database > database.sql`
