@@ -10,7 +10,6 @@ Task Manager is a simple PHP web application for managing tasks where user can v
 
 ## Requirements
 * Git
-* Code Editor (e.g., PHPStorm or any other)
 * MySql (or any compatible database for data storage)
 * PHP
 
