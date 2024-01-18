@@ -2,16 +2,6 @@
 
 Task Manager is a simple PHP web application for managing tasks where user can view, create, edit and delete tasks.
 
-## Features
-### View Tasks
-![View Feature](images/view.png)
-### Create Tasks
-![Create Feature](images/create.png)
-### Edit Tasks
-![Edit Feature](images/edit.png)
-### Delete Tasks
-![Delete Feature](images/delete.png)
-
 ## Requirements
 * [Git](https://git-scm.com/download/win)
 * [MySql](https://www.mysql.com/downloads/)
@@ -37,3 +27,13 @@ Task Manager is a simple PHP web application for managing tasks where user can v
 ## Database Structure
 This command exports the structure of a database without including any data - 
 `mysqldump -u user -h localhost -p database > database.sql`
+
+## Features
+### View Tasks
+![View Feature](images/view.png)
+### Create Tasks
+![Create Feature](images/create.png)
+### Edit Tasks
+![Edit Feature](images/edit.png)
+### Delete Tasks
+![Delete Feature](images/delete.png)
