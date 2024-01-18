@@ -3,10 +3,14 @@
 Task Manager is a simple PHP web application for managing tasks where user can view, create, edit and delete tasks.
 
 ## Features
-- View Tasks:
-- Create Tasks
-- Edit Tasks
-- Delete Tasks
+### View Tasks
+![View Feature](images/view.png)
+### Create Tasks
+![Create Feature](images/create.png)
+### Edit Tasks
+![Edit Feature](images/edit.png)
+### Delete Tasks
+![Delete Feature](images/delete.png)
 
 ## Requirements
 * Git
