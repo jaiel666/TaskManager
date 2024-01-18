@@ -26,7 +26,7 @@ Task Manager is a simple PHP web application for managing tasks where user can v
 
 ## Database Structure
 This command exports the structure of a database without including any data <br>
-`mysqldump -u user -h localhost -p database > database.sql`
+`mysqldump -u user -h localhost --no-data -p database > database.sql`
 
 ## Features
 ### View Tasks
